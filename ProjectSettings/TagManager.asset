@@ -8,6 +8,7 @@ TagManager:
   - Slow
   - Fast
   - Fast2
+  - Obstacle
   layers:
   - Default
   - TransparentFX

@@ -35,4 +35,11 @@ public class PlayerController : MonoBehaviour
             //p_rigid.AddForce(Vector3.right * force);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag != "Obstacle") return;
+
+        Debug.Log("collision! " + collision.transform.name);
+    }
 }
